@@ -46,7 +46,6 @@
                                     <th>Institution</th>
                                     <th>Location</th>
                                     <th>Access</th>
-                                    <th>Courses</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>                           
@@ -59,7 +58,6 @@
                                     <td><?php echo $uni['institution']; ?></td>
                                     <td><?php echo $uni['location']; ?></td>
                                     <td><?php echo $uni['access']; ?></td>
-                                    <td><?php echo $uni['courses']; ?></td>
                                     <td class="text-nowrap">
                                         <a href="<?php echo base_url('admin/uni/update/'.$uni['id']) ?>" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-success m-r-10"></i> </a>
 

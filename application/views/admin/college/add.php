@@ -98,7 +98,7 @@
                                     <div class="form-group row">
                                         <label class="control-label text-right col-md-3"></label>
                                         <div class="controls">
-                                            <button type="submit" class="btn btn-success">Add University</button>
+                                            <button type="submit" class="btn btn-success">Add College</button>
                                         </div>
                                     </div>
                                 </div>
