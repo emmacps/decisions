@@ -20,6 +20,13 @@ class Guidance extends CI_Controller {
     //     $this->load->view('frontend/institution', $data);
     // }
 
+    public function search_guide(){
+
+        $data['searchdata'] = $this->guidance_model->get_guide();
+
+        $this->load->view('frontend/guide_report', $data);
+    }
+
 
 
   }

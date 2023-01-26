@@ -31,50 +31,37 @@
        <div class="col-sm-12">
          <div class="card">
             <div class="card-body">
-              <form class="row g-3">
+              <form class="row g-3" action="<?php echo site_url('guidance/search_guide') ?>" method="get">
                 <div class="col-6">
                   <label for="" class="form-label">Subject of interest</label>
-                  <input type="text" class="form-control" name="">
+                  <input type="text" class="form-control" name="subject">
                 </div>
                 <div class="col-6">
                   <label for="" class="form-label">Field of interest</label>
-                  <input type="text" class="form-control" name="">
+                  <input type="text" class="form-control" name="field">
                 </div>
                 <div class="col-12">
                   <label for="" class="form-label">Check subjects with at least credit pass</label><br>
-                  <input type="checkbox" class="form-check-input" value=""> English
-                  <input type="checkbox" class="form-check-input" value=""> Integrated Science
-                  <input type="checkbox" class="form-check-input" value=""> Core Mathematics
-                  <input type="checkbox" class="form-check-input" value=""> Social Studies
-                  <input type="checkbox" class="form-check-input" value=""> Chemistry
-                  <input type="checkbox" class="form-check-input" value=""> Physics
-                  <input type="checkbox" class="form-check-input" value=""> Biology
-                  <input type="checkbox" class="form-check-input" value=""> Elective Mathematics
-                  <input type="checkbox" class="form-check-input" value=""> Economics
-                  <input type="checkbox" class="form-check-input" value=""> Business Management
-                  <input type="checkbox" class="form-check-input" value=""> Financial Accounting
-                  <input type="checkbox" class="form-check-input" value=""> Counting
-                  <input type="checkbox" class="form-check-input" value=""> Geography
-                  <input type="checkbox" class="form-check-input" value=""> History
-                  <input type="checkbox" class="form-check-input" value=""> Literature
-                  <input type="checkbox" class="form-check-input" value=""> Government
+                  <input type="checkbox" class="form-check-input" value="English"> English
+                  <input type="checkbox" class="form-check-input" value="Integrated Science"> Integrated Science
+                  <input type="checkbox" class="form-check-input" value="Core Mathematics"> Core Mathematics
+                  <input type="checkbox" class="form-check-input" value="Social Studies"> Social Studies
+                  <input type="checkbox" class="form-check-input" value="Chemistry"> Chemistry
+                  <input type="checkbox" class="form-check-input" value="Physics"> Physics
+                  <input type="checkbox" class="form-check-input" value="Biology"> Biology
+                  <input type="checkbox" class="form-check-input" value="Elective Mathematics"> Elective Mathematics
+                  <input type="checkbox" class="form-check-input" value="Economics"> Economics
+                  <input type="checkbox" class="form-check-input" value="Business Management"> Business Management
+                  <input type="checkbox" class="form-check-input" value="Financial Accounting"> Financial Accounting
+                  <input type="checkbox" class="form-check-input" value="Counting"> Counting
+                  <input type="checkbox" class="form-check-input" value="Geography"> Geography
+                  <input type="checkbox" class="form-check-input" value="History"> History
+                  <input type="checkbox" class="form-check-input" value="Literature"> Literature
+                  <input type="checkbox" class="form-check-input" value="Government"> Government
                 </div>
                 <div class="col-4">
                   <label for="">Total Aggregrade obtain</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="row">
-                  <div class="col-4">
-                    <label for="inputState" class="form-label">State</label>
-                    <select class="form-select">
-                      <option>Choose...</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="col-2">
-                    <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                  </div>
+                  <input type="text" class="form-control" name="aggregrade">
                 </div>
                 <div class="col-12">
                   <button type="submit" class="btn btn-primary">Search</button>
