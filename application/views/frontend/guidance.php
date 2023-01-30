@@ -32,14 +32,15 @@
          <div class="card">
             <div class="card-body">
               <form class="row g-3" action="<?php echo site_url('guidance/search_guide') ?>" method="get">
+                 <div class="col-6">
+                  <label for="" class="form-label">Field of interest</label>
+                  <input type="text" class="form-control" name="field">
+                </div>
                 <div class="col-6">
                   <label for="" class="form-label">Subject of interest</label>
                   <input type="text" class="form-control" name="subject">
                 </div>
-                <div class="col-6">
-                  <label for="" class="form-label">Field of interest</label>
-                  <input type="text" class="form-control" name="field">
-                </div>
+               
                 <div class="col-12">
                   <label for="" class="form-label">Check subjects with at least credit pass</label><br>
                   <input type="checkbox" class="form-check-input" value="English"> English

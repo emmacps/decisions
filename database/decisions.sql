@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 23, 2023 at 08:32 AM
+-- Generation Time: Jan 30, 2023 at 12:58 AM
 -- Server version: 8.0.21
 -- PHP Version: 7.4.9
 
@@ -269,7 +269,7 @@ INSERT INTO `country` (`id`, `name`, `status`) VALUES
 DROP TABLE IF EXISTS `courses`;
 CREATE TABLE IF NOT EXISTS `courses` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `uni_cus` varchar(255) NOT NULL,
+  `uni_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `title` varchar(255) NOT NULL,
   `subject` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
@@ -279,9 +279,9 @@ CREATE TABLE IF NOT EXISTS `courses` (
 -- Dumping data for table `courses`
 --
 
-INSERT INTO `courses` (`id`, `uni_cus`, `title`, `subject`) VALUES
-(1, 'Accra Tech Uni', 'Marketing', 'a:2:{i:0;s:14:\"Elective Maths\";i:1;s:21:\"Literature In English\";}'),
-(2, 'Accra Tech Unied', 'fashion', 'a:3:{i:0;s:7:\"Biology\";i:1;s:21:\"Literature In English\";i:2;s:6:\"French\";}');
+INSERT INTO `courses` (`id`, `uni_id`, `title`, `subject`) VALUES
+(1, '1', 'Marketing', 'a:2:{i:0;s:14:\"Elective Maths\";i:1;s:21:\"Literature In English\";}'),
+(2, '2', 'fashion', 'a:3:{i:0;s:7:\"Biology\";i:1;s:21:\"Literature In English\";i:2;s:6:\"French\";}');
 
 -- --------------------------------------------------------
 
@@ -296,7 +296,7 @@ CREATE TABLE IF NOT EXISTS `uni` (
   `institution` varchar(255) NOT NULL,
   `location` varchar(255) NOT NULL,
   `access` varchar(255) NOT NULL,
-  `courses` varchar(255) NOT NULL,
+  `course_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -304,9 +304,9 @@ CREATE TABLE IF NOT EXISTS `uni` (
 -- Dumping data for table `uni`
 --
 
-INSERT INTO `uni` (`id`, `rank`, `institution`, `location`, `access`, `courses`) VALUES
-(1, '4ed', 'Accra Tech Unied', 'Accraed', 'Private', ''),
-(2, '3', 'KSTU', 'Kumasi', 'Public', '');
+INSERT INTO `uni` (`id`, `rank`, `institution`, `location`, `access`, `course_id`) VALUES
+(1, '4ed', 'Accra Tech Unied', 'Accraed', 'Private', '1'),
+(2, '3', 'KSTU', 'Kumasi', 'Public', '2');
 
 -- --------------------------------------------------------
 

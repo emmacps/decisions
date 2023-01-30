@@ -22,7 +22,7 @@ class Guidance extends CI_Controller {
 
     public function search_guide(){
 
-        $data['searchdata'] = $this->guidance_model->get_guide();
+        $data['searchdatas'] = $this->guidance_model->get_guide();
 
         $this->load->view('frontend/guide_report', $data);
     }

@@ -34,37 +34,21 @@
               <table id="example" class="table table-striped dt-responsive nowrap" style="width:100%">
         <thead>
             <tr>
-                <th>Course</th>
                 <th>Institution</th>
+                <th>Course to study</th>
                 <th>Award Certification</th>
-                <th>Career</th>
+                <th>College</th>
             </tr>
         </thead>
         <tbody>
+           <?php foreach($searchdatas as $searchdata): ?>
             <tr>
-                <td>Bachelor of Medicine</td>
-                <td>University of Ghana</td>
-                <td>Bachelor of Science Degree</td>
-                <td>Medical Doctore</td>
+                <td><?php echo $searchdata['institution'] ?></td>
+                <td><?php echo $searchdata['title'] ?></td>
+                <td><?php echo $searchdata['location'] ?></td>
+                <td><?php echo $searchdata['subject'] ?></td>
             </tr>
-            <tr>
-                <td>Bachelor of Dental Surgery</td>
-                <td>KNUST</td>
-                <td>Bachelor of Science Degree</td>
-                <td>Medical Doctore, Physician, Surgeon</td>
-            </tr>
-            <tr>
-                <td>Doctor of Pharmacy</td>
-                <td>University of Ghana</td>
-                <td>Bachelor of Science Degree</td>
-                <td>Medical Doctore, Physician,</td>
-            </tr>
-            <tr>
-                <td>Bachelor of Science in Dietetics</td>
-                <td>KNUST</td>
-                <td>Bachelor of Science Degree</td>
-                <td>Dietetian</td>
-            </tr>
+        <?php endforeach; ?>
 
         </tbody>
     </table>
