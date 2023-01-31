@@ -31,7 +31,7 @@
        <div class="col-sm-12">
          <div class="card">
             <div class="card-body">
-              <form class="row g-3" action="<?php echo site_url('guidance/search_guide') ?>" method="get">
+              <form class="row g-3" role="search" action="<?php echo site_url('guidance/search_guide') ?>" method="get">
                  <div class="col-6">
                   <label for="" class="form-label">Field of interest</label>
                   <input type="text" class="form-control" name="field">

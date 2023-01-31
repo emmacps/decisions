@@ -31,22 +31,18 @@
        <div class="col-sm-12">
          <div class="card">
             <div class="card-body">
-              <table id="example" class="table table-striped dt-responsive nowrap" style="width:100%">
+              <table id="example" class="table table-striped dt-responsive" style="width:100%">
         <thead>
             <tr>
                 <th>Institution</th>
                 <th>Course to study</th>
-                <th>Award Certification</th>
-                <th>College</th>
             </tr>
         </thead>
         <tbody>
            <?php foreach($searchdatas as $searchdata): ?>
             <tr>
-                <td><?php echo $searchdata['institution'] ?></td>
+                <td><?php echo $searchdata['uni_cus'] ?></td>
                 <td><?php echo $searchdata['title'] ?></td>
-                <td><?php echo $searchdata['location'] ?></td>
-                <td><?php echo $searchdata['subject'] ?></td>
             </tr>
         <?php endforeach; ?>
 
